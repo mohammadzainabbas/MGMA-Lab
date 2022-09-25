@@ -21,11 +21,13 @@
 
 __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstructured_) can be analysed as a graph. Today, many practical computing problems concern large graphs. Standard examples include the Web graph and various social networks. The scale of these graphs (_in some cases billions of vertices, trillions of edges_) poses challenges to their efficient processing.
 
+#
 
-<a id="network-x" />
+<a id="labs" />
 
-#### 1.1. NetworkX
+### 2. Labs
 
+The main aim for this repository 
 In this course, we will focus on some basic graph algorithms and see how we can utilise these algorithms to efficiently analyse our data. Since, there exist many similarities between graph theory and network science, you will see us using network science related packages as well.
 
 #
