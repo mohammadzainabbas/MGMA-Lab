@@ -1,20 +1,10 @@
-## Lab 01 - NetworkX 👨🏻‍💻
+## Create new enviornment 👨🏻‍💻
 
 ### Table of contents
 
-- [Introduction](#introduction)
-  * [NetworkX](#network-x)
-- [Dataset](#dataset)
-  * [SNAP for Python](#snap-for-python)
-  * [WormNet v3](#wormnet-v3)
-- [Setup](#setup)
-  * [Create new enviornment](#create-new-env)
-    * [Via conda](#new-env-conda)
-    * [Via virtualenv](#new-env-virtualenv)
-  * [Setup `pre-commit` hooks](#setup-pre-commit)
-<!-- - [Preprocess](#preprocess)
-- [Generate TBOX](#generate-tbox)
-- [Generate ABOX](#generate-abox) -->
+- [Create new enviornment](#create-new-env)
+  * [Via conda](#new-env-conda)
+  * [Via virtualenv](#new-env-virtualenv)
 
 #
 
