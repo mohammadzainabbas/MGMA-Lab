@@ -61,7 +61,7 @@ If you want to follow along with the lab exercises, make sure to clone and `cd` 
 
 ```bash
 git clone https://github.com/mohammadzainabbas/MGMA-Lab.git
-cd MGMA-Lab/src/lab1
+cd MGMA-Lab/src/<lab-of-your-choice>
 ```
 
 <a id="create-new-env" />
