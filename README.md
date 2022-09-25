@@ -9,8 +9,6 @@
   * [Lab 01 - NetworkX](#lab-1)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
-    * [Via conda](#new-env-conda)
-    * [Via virtualenv](#new-env-virtualenv)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
 
 
