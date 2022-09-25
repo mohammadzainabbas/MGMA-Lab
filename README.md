@@ -34,7 +34,12 @@ Besides, the distributed storage and parallel computation technologies offer spe
 
 The purpose of this course is to study the main algorithms and their implementation on artificial and real data in a distributed environment.
 
+#### 2.1. Main Topics
 
+-[] Preliminaries, Typology of graphs, Graph analytics measures
+-[] Basic algorithms: Random walk and Page Rank
+-[] Label propagation, Community detection, Influence maximisation
+-[] Graph analytics & Deep Learning
 
 #
 
