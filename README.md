@@ -12,9 +12,7 @@
     * [Via conda](#new-env-conda)
     * [Via virtualenv](#new-env-virtualenv)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
-<!-- - [Preprocess](#preprocess)
-- [Generate TBOX](#generate-tbox)
-- [Generate ABOX](#generate-abox) -->
+
 
 #
 
