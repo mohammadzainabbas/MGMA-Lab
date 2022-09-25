@@ -27,8 +27,7 @@ __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstru
 
 ### 2. Labs
 
-The main aim for this repository 
-In this course, we will focus on some basic graph algorithms and see how we can utilise these algorithms to efficiently analyse our data. Since, there exist many similarities between graph theory and network science, you will see us using network science related packages as well.
+The main aim for this repository is to keep track of the work we have done in Massive Graph Management and Analytics (MGMA) labs. During this course, we will focus on some basic graph algorithms and see how we can utilise these algorithms to efficiently analyse our data. Since, there exist many similarities between graph theory and network science, you will see us using network science related packages as well.
 
 #
 
