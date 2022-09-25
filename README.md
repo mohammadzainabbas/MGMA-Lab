@@ -60,6 +60,7 @@ WormNet is part of [YONSEI Network Biology Lab](https://netbiolab.org/w/Welcome)
 
 ### 3. Setup
 
+Before starting, make sure that you have `conda` (Anaconda) installed.
 
 ```bash
 conda create -n mgma python=3 -y 
