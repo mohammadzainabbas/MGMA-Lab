@@ -3,6 +3,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
+- [About the course](#about-course)
 - [Labs](#labs)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
