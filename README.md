@@ -1,5 +1,6 @@
 ## Lab 01 - NetworkX 👨🏻‍💻
 
+#
 ### Table of contents
 
 - [Introduction](#introduction)
@@ -14,7 +15,7 @@
 - [Generate TBOX](#generate-tbox)
 - [Generate ABOX](#generate-abox)
 
----
+#
 
 <a id="introduction" />
 
