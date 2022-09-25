@@ -111,10 +111,12 @@ pip install pre-commit
 
 You can have a look at some basic pre-commit hooks that I have added under [pre-commit-config.yml](https://github.com/mohammadzainabbas/MGMA-Lab/blob/lab1/pre-commit-config.yml) file. You can checkout all the `pre-commit hooks` [here](https://pre-commit.com/hooks.html). And add any hook that you like in this file.
 
-Now, install the pre-commit hook
+Now, install the pre-commit hook by running:
 
 ```bash
 pre-commit install
 ```
+
+It will be installed.
 
 
