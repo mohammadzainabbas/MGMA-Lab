@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 <a id="setup-pre-commit" />
 
-#### 3.2. Setup `pre-commit` hooks
+#### 4.2. Setup `pre-commit` hooks
 
 In order to setup `pre-commit` hooks, please refer to the [documentation](https://github.com/mohammadzainabbas/MGMA-Lab/blob/main/docs/SETUP_PRE-COMMIT_HOOKS.md).
 
