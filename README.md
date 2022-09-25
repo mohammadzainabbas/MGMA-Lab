@@ -10,10 +10,11 @@
   * [Ontology](#ontology)
     * [TBOX](#tbox)
     * [ABOX](#abox)
+- [Dataset](#dataset)
+  * [Snap](#snap)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
-- [Dataset](#dataset)
 - [Preprocess](#preprocess)
 - [Generate TBOX](#generate-tbox)
 - [Generate ABOX](#generate-abox)
@@ -33,6 +34,7 @@ In this lab, we will focus on some basic graph algorithms and see how we can uti
 #### 1.1. NetworkX
 
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
 
 
 ```bash
