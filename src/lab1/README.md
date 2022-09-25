@@ -12,9 +12,6 @@
     * [Via conda](#new-env-conda)
     * [Via virtualenv](#new-env-virtualenv)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
-<!-- - [Preprocess](#preprocess)
-- [Generate TBOX](#generate-tbox)
-- [Generate ABOX](#generate-abox) -->
 
 #
 
@@ -62,56 +59,18 @@ WormNet is part of [YONSEI Network Biology Lab](https://netbiolab.org/w/Welcome)
 
 ### 3. Setup
 
-If you want to follow along, make sure to clone and checkout to lab's branch:
+If you want to follow along, make sure to clone and `cd` to this lab's directory:
 
 ```bash
 git clone https://github.com/mohammadzainabbas/MGMA-Lab.git
-cd MGMA-Lab/
-git checkout lab1
+cd MGMA-Lab/src/lab1
 ```
 
 <a id="create-new-env" />
 
 #### 3.1. Create new enviornment
 
-<a id="new-env-conda" />
-
-##### 3.1.1. Via conda
-
-Before starting further, make sure that you have `conda` (Anaconda) installed (otherwise, create a new env via [virutalenv](#new-env-virtualenv)). We will create a new enviornment for the purpose of our labs:
-
-```bash
-conda create -n mgma python=3 -y 
-```
-
-and activate it
-
-```bash
-conda activate mgma
-```
-
-<a id="new-env-virtualenv" />
-
-##### 3.1.2. Via virtualenv
-
-You can create your virtual enviornment without conda as well. In order to do that, make sure that you have [`virtualenv`](https://pypi.org/project/virtualenv/) installed or else, you can install it via:
-
-
-```bash
-pip install virtualenv
-```
-
-Now, create your new enviornment called `mgma`
-
-```bash
-virtualenv -p python3 mgma
-```
-
-and then activate it via
-
-```bash
-source mgma/bin/activate
-```
+Before starting, you may have to create new enviornment for the lab. Kindly, checkout the [documentation](docs/SETUP_ENV.md) for creating an new environment.
 
 #
 
