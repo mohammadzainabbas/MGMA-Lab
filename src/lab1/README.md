@@ -59,12 +59,11 @@ WormNet is part of [YONSEI Network Biology Lab](https://netbiolab.org/w/Welcome)
 
 ### 3. Setup
 
-If you want to follow along, make sure to clone and checkout to lab's branch:
+If you want to follow along, make sure to clone and `cd` to this lab's directory:
 
 ```bash
 git clone https://github.com/mohammadzainabbas/MGMA-Lab.git
-cd MGMA-Lab/
-git checkout lab1
+cd MGMA-Lab/src/lab1
 ```
 
 <a id="create-new-env" />
