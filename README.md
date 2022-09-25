@@ -3,10 +3,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
-  * [NetworkX](#network-x)
 - [Labs](#labs)
-  * [SNAP for Python](#snap-for-python)
-  * [WormNet v3](#wormnet-v3)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
     * [Via conda](#new-env-conda)
