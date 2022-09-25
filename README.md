@@ -55,7 +55,9 @@ SNAP also provides some graph datasets which we will use in this lab. List of av
 WormNet is part of [YONSEI Network Biology Lab](https://netbiolab.org/w/Welcome). You can check out other available software/data [here](https://netbiolab.org/w/Software).
 
 
+<a id="setup" />
 
+#### 3. Setup
 
 
 ```bash
