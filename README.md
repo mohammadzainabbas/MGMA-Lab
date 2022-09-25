@@ -55,7 +55,9 @@ The main aim of this repository is to keep track of the work we have done in Mas
 
 #### 3.1. Lab 01 - NetworkX
 
+[NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
+In this lab, 
 
 #
 
