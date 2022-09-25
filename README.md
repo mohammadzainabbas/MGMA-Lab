@@ -35,6 +35,16 @@ In this lab, we will focus on some basic graph algorithms and see how we can uti
 
 ### 2. Dataset
 
+For the purpose of this lab, we will use graph datasets. Instead of creating our own graphs (you are more then welcome if you have your own graph datasets), we will use some already existing datasets.
+
+<a id="snap" />
+
+#### 2.1. Snap
+
+
+
+
+
 
 
 ```bash
