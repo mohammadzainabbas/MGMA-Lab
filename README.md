@@ -57,7 +57,7 @@ The main aim of this repository is to keep track of the work we have done in Mas
 
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
-In this lab, 
+Please checkout lab's details [here]() 
 
 #
 
