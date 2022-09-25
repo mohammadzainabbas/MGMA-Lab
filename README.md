@@ -50,7 +50,7 @@ SNAP also provides some graph datasets which we will use in this lab. List of av
 
 #### 2.2. WormNet v3
 
-[WormNet]() provides a genes data in the form of a network. It's basically a network-assistant
+[WormNet]() provides a genes data in the form of a network. It's basically a network-assisted hypothesis-generating server for 
 
 
 
