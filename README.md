@@ -79,6 +79,12 @@ Before starting further, make sure that you have `conda` (Anaconda) installed. W
 conda create -n mgma python=3 -y 
 ```
 
+and activate it
+
+```bash
+conda activate mgma
+```
+
 Then we will install all the dependencies of this project:
 
 ```bash
