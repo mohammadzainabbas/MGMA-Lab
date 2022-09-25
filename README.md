@@ -74,7 +74,7 @@ Before starting, you may have to create new enviornment for the lab. Kindly, che
 
 #
 
-Once, you have activated your new enviornment, we will install all the dependencies of this project:
+Once, you have activated your new enviornment, we may have to install all the dependencies for a given lab (kindly check if `requirements.txt` file exists for a given lab before running the below command):
 
 ```bash
 pip install -r requirements.txt
