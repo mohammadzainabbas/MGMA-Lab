@@ -12,9 +12,9 @@
     * [Via conda](#new-env-conda)
     * [Via virtualenv](#new-env-virtualenv)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
-- [Preprocess](#preprocess)
+<!-- - [Preprocess](#preprocess)
 - [Generate TBOX](#generate-tbox)
-- [Generate ABOX](#generate-abox)
+- [Generate ABOX](#generate-abox) -->
 
 #
 
@@ -154,3 +154,6 @@ pre-commit installed at .git/hooks/pre-commit
 ```
 
 This means pre-commit hook were installed successfully.
+
+#
+
