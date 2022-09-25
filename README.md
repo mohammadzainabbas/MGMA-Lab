@@ -68,6 +68,14 @@ cd MGMA-Lab/
 git checkout lab1
 ```
 
+<a id="create-new-env" />
+
+#### 3.1. Create new enviornment
+
+<a id="setup-pre-commit" />
+
+#### 3.2. Setup `pre-commit` hooks
+
 Before starting further, make sure that you have `conda` (Anaconda) installed. We will create a new enviornment for the purpose of our labs:
 
 ```bash
