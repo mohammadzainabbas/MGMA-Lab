@@ -153,4 +153,4 @@ you will see
 pre-commit installed at .git/hooks/pre-commit
 ```
 
-This means pre-commit hook were installed successfully. You can 
+This means pre-commit hook were installed successfully.
