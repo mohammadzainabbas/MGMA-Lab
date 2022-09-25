@@ -8,7 +8,7 @@
   * [NetworkX](#network-x)
 - [Dataset](#dataset)
   * [SNAP for Python](#snap-for-python)
-  * [Worm](#snap-for-python)
+  * [WormNet v3](#wormnet-v3)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
