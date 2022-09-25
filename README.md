@@ -41,9 +41,9 @@ For the purpose of this lab, we will use graph datasets. Instead of creating our
 
 #### 2.1. SNAP for Python
 
-[Snap.py]() is a Python interface for SNAP. SNAP is a general purpose, high performance system for analysis and manipulation of large networks. SNAP is written in C++ and optimized for maximum performance and compact graph representation. It easily scales to massive networks with hundreds of millions of nodes, and billions of edges.
+[Snap.py](https://snap.stanford.edu/snappy/) is a Python interface for SNAP. SNAP is a general purpose, high performance system for analysis and manipulation of large networks. SNAP is written in C++ and optimized for maximum performance and compact graph representation. It easily scales to massive networks with hundreds of millions of nodes, and billions of edges.
 
-
+SNAP also provides some graph datasets which we will use in this lab.
 
 
 
