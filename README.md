@@ -72,9 +72,6 @@ git checkout lab1
 
 #### 3.1. Create new enviornment
 
-<a id="setup-pre-commit" />
-
-#### 3.2. Setup `pre-commit` hooks
 
 Before starting further, make sure that you have `conda` (Anaconda) installed. We will create a new enviornment for the purpose of our labs:
 
@@ -88,6 +85,9 @@ Then we will install all the dependencies of this project:
 pip install -r requirements.txt
 ```
 
+<a id="setup-pre-commit" />
+
+#### 3.2. Setup `pre-commit` hooks
 
 
 ```bash
