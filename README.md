@@ -28,7 +28,13 @@ __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstru
 
 ### 2. About the course
 
-Data we produce or consume has increasingly networked structures which have grown in complexity in different domains such as biology, social networks, economy, communication and transport networks. The need to process and to analyze such data carries out the emergence of network science research community to define algorithms which allow to characterize such complex structures, to understand their topology, their evolution and to interpret the underlying phenomena. Besides, the distributed storage and parallel computation technologies offer specific tools for networks based on large-scale graph processing paradigms such as MapReduce and Pregel of Google.The purpose of this course is to study the main algorithms and their implementation on artificial and real data in a distributed environment.
+Data we produce or consume has increasingly networked structures which have grown in complexity in different domains such as `biology`, `social networks`, `economy`, `communication` and `transport networks`. The need to process and to analyze such data carries out the emergence of network science research community to define algorithms which allow to characterize such complex structures, to understand their topology, their evolution and to interpret the underlying phenomena. 
+
+Besides, the distributed storage and parallel computation technologies offer specific tools for networks based on large-scale graph processing paradigms such as `MapReduce` and `Pregel` of Google.
+
+The purpose of this course is to study the main algorithms and their implementation on artificial and real data in a distributed environment.
+
+
 
 #
 
