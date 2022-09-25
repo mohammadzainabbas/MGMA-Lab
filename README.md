@@ -7,7 +7,7 @@
 - [Introduction](#introduction)
   * [NetworkX](#network-x)
 - [Dataset](#dataset)
-  * [Snap](#snap)
+  * [SNAP for Python](#snap-for-python)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -37,9 +37,11 @@ In this lab, we will focus on some basic graph algorithms and see how we can uti
 
 For the purpose of this lab, we will use graph datasets. Instead of creating our own graphs (you are more then welcome if you have your own graph datasets), we will use some already existing datasets.
 
-<a id="snap" />
+<a id="snap-for-python" />
 
-#### 2.1. Snap
+#### 2.1. SNAP for Python
+
+
 
 
 
