@@ -9,6 +9,8 @@
   * [WormNet v3](#wormnet-v3)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
+    * [Via conda](#new-env-conda)
+    * [Via virtualenv](#new-env-virtualenv)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
 - [Preprocess](#preprocess)
 - [Generate TBOX](#generate-tbox)
@@ -72,8 +74,11 @@ git checkout lab1
 
 #### 3.1. Create new enviornment
 
+<a id="new-env-conda" />
 
-Before starting further, make sure that you have `conda` (Anaconda) installed. We will create a new enviornment for the purpose of our labs:
+##### 3.1.1. Via conda
+
+Before starting further, make sure that you have `conda` (Anaconda) installed (otherwise, create a new env via [virutalenv](#new-env-virtualenv)). We will create a new enviornment for the purpose of our labs:
 
 ```bash
 conda create -n mgma python=3 -y 
@@ -85,7 +90,32 @@ and activate it
 conda activate mgma
 ```
 
-Then we will install all the dependencies of this project:
+<a id="new-env-virtualenv" />
+
+##### 3.1.2. Via virtualenv
+
+You can create your virtual enviornment without conda as well. In order to do that, make sure that you have [`virtualenv`](https://pypi.org/project/virtualenv/) installed or else, you can install it via:
+
+
+```bash
+pip install virtualenv
+```
+
+Now, create your new enviornment called `mgma`
+
+```bash
+virtualenv -p python3 mgma
+```
+
+and then activate it via
+
+```bash
+source mgma/bin/activate
+```
+
+#
+
+Once, you have activated your new enviornment, we will install all the dependencies of this project:
 
 ```bash
 pip install -r requirements.txt
@@ -117,6 +147,10 @@ Now, install the pre-commit hook by running:
 pre-commit install
 ```
 
-It will be installed.
+you will see
 
+```txt
+pre-commit installed at .git/hooks/pre-commit
+```
 
+This means pre-commit hook were installed successfully. You can 
