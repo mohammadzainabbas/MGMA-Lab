@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [About the course](#about-course)
+  * [Main Topics](#main-topics)
 - [Labs](#labs)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
@@ -33,6 +34,8 @@ Data we produce or consume has increasingly networked structures which have grow
 Besides, the distributed storage and parallel computation technologies offer specific tools for networks based on large-scale graph processing paradigms such as `MapReduce` and `Pregel` of Google.
 
 The purpose of this course is to study the main algorithms and their implementation on artificial and real data in a distributed environment.
+
+<a id="main-topics" />
 
 #### 2.1. Main Topics
 
