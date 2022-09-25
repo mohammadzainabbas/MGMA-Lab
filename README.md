@@ -51,6 +51,12 @@ The main aim of this repository is to keep track of the work we have done in Mas
 
 #
 
+<a id="lab-1" />
+
+#### 3.1. Lab 01 - NetworkX
+
+
+
 #
 
 <a id="setup" />
