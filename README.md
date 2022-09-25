@@ -36,10 +36,10 @@ The purpose of this course is to study the main algorithms and their implementat
 
 #### 2.1. Main Topics
 
--[] Preliminaries, Typology of graphs, Graph analytics measures
--[] Basic algorithms: Random walk and Page Rank
--[] Label propagation, Community detection, Influence maximisation
--[] Graph analytics & Deep Learning
+- [] Preliminaries, Typology of graphs, Graph analytics measures
+- [] Basic algorithms: Random walk and Page Rank
+- [] Label propagation, Community detection, Influence maximisation
+- [] Graph analytics & Deep Learning
 
 #
 
