@@ -57,7 +57,7 @@ The main aim of this repository is to keep track of the work we have done in Mas
 
 ### 4. Setup
 
-If you want to follow along, make sure to clone and `cd` to this lab's directory:
+If you want to follow along with the lab exercises, make sure to clone and `cd` to the relevant lab's directory:
 
 ```bash
 git clone https://github.com/mohammadzainabbas/MGMA-Lab.git
