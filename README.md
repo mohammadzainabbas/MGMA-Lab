@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 Git hook scripts are useful for identifying simple issues before submission to code review. We run our hooks on every commit to automatically point out issues in code such as _missing semicolons_, _trailing whitespace_, and _debug statements_. Checkout `pre-commit` hook [site](https://pre-commit.com/index.html) for more details.
 
-Checkout all the `pre-commit hooks` [here](https://pre-commit.com/hooks.html)
+Also, checkout all the `pre-commit hooks` [here](https://pre-commit.com/hooks.html).
 
 You can setup `pre-commit` hook by running:
 
