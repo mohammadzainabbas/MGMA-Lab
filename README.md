@@ -12,6 +12,7 @@
     * [ABOX](#abox)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
+  * [Setup `pre-commit` hooks](#setup-pre-commit)
 - [Dataset](#dataset)
 - [Preprocess](#preprocess)
 - [Generate TBOX](#generate-tbox)
