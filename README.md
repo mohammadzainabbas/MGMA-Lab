@@ -26,6 +26,8 @@
 
 __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstructured_) can be analysed as a graph. Today, many practical computing problems concern large graphs. Standard examples include the Web graph and various social networks. The scale of these graphs (_in some cases billions of vertices, trillions of edges_) poses challenges to their efficient processing.
 
+In this lab, we will focus on some basic graph algorithms and see how we can utilise these algorithms to efficiently analyse our data.
+
 <a id="network-x" />
 
 #### 1.1. NetworkX
