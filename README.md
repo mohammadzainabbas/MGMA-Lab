@@ -46,6 +46,9 @@ For the purpose of this lab, we will use graph datasets. Instead of creating our
 
 SNAP also provides some graph datasets which we will use in this lab. List of available datasets can be found [here](https://snap.stanford.edu/data/index.html).
 
+<a id="wormnet-v3" />
+
+#### 2.2. WormNet v3
 
 
 
