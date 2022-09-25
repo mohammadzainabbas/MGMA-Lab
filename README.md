@@ -64,6 +64,8 @@ git clone https://github.com/mohammadzainabbas/MGMA-Lab.git
 cd MGMA-Lab/src/<lab-of-your-choice>
 ```
 
+> For e.g: if you want to practice lab # 1, then you should ```cd MGMA-Lab/src/<lab-of-your-choice>```
+
 <a id="create-new-env" />
 
 #### 4.1. Create new enviornment
