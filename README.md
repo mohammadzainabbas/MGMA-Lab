@@ -1,4 +1,4 @@
-## Lab 01 - NetworkX 👨🏻‍💻
+## Lab Work @ Massive Graph Management and Analytics 👨🏻‍💻
 
 ### Table of contents
 
