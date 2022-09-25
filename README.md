@@ -68,7 +68,7 @@ cd MGMA-Lab/
 git checkout lab1
 ```
 
-Before starting, make sure that you have `conda` (Anaconda) installed. We will start by creating a new enviornment for the purpose of our labs:
+Before starting further, make sure that you have `conda` (Anaconda) installed. We will create a new enviornment for the purpose of our labs:
 
 ```bash
 conda create -n mgma python=3 -y 
