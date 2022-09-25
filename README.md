@@ -60,6 +60,12 @@ WormNet is part of [YONSEI Network Biology Lab](https://netbiolab.org/w/Welcome)
 
 ### 3. Setup
 
+If you want to follow along, make sure to clone and checkout to lab's branch:
+
+```bash
+git clone 
+```
+
 Before starting, make sure that you have `conda` (Anaconda) installed. We will start by creating a new enviornment for the purpose of our labs:
 
 ```bash
