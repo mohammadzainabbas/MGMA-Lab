@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
   * [NetworkX](#network-x)
-- [Dataset](#dataset)
+- [Labs](#labs)
   * [SNAP for Python](#snap-for-python)
   * [WormNet v3](#wormnet-v3)
 - [Setup](#setup)
