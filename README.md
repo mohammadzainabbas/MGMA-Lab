@@ -10,6 +10,7 @@
   * [Ontology](#ontology)
     * [TBOX](#tbox)
     * [ABOX](#abox)
+- [Setup](#setup)
 - [Dataset](#dataset)
 - [Preprocess](#preprocess)
 - [Generate TBOX](#generate-tbox)
