@@ -1,3 +1,4 @@
 snap
 networkx[default]
 ipykernel
+mayavi
