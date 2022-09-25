@@ -34,11 +34,6 @@ In this lab, we will focus on some basic graph algorithms and see how we can uti
 
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
-To install it, make sure that you have [setup your enviorment](#setup) first.
-
-```bash
-pip install network[default]
-```
 
 ```bash
 conda create -n mgma python=3 -y 
