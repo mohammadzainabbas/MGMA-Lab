@@ -50,7 +50,7 @@ SNAP also provides some graph datasets which we will use in this lab. List of av
 
 #### 2.2. WormNet v3
 
-[WormNet]() provides a genes data in the form of a network. It's basically a network-assisted hypothesis-generating server for `C. elegans`. List of available gene datasets can be found [here](https://www.inetbio.org/wormnet/downloadnetwork.php).
+[WormNet]() provides a genes data in the form of a network. It's basically a network-assisted hypothesis-generating server for `Caenorhabditis elegans`. List of available datasets can be found [here](https://www.inetbio.org/wormnet/downloadnetwork.php).
 
 
 
