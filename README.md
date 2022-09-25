@@ -72,6 +72,8 @@ Then we will install all the dependencies of this project:
 pip install -r requirements.txt
 ```
 
+
+
 ```bash
 brew install pre-commit
 ```
