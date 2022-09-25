@@ -5,7 +5,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
-  * [GraphDB](#graph-db)
+  * [NetworkX](#network-x)
   * [Apache Jena](#apache-jena)
   * [Ontology](#ontology)
     * [TBOX](#tbox)
