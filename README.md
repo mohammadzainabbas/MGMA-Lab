@@ -20,6 +20,8 @@ or
 pip install pre-commit
 ```
 
+Checkout all the `pre-commit hooks` [here](https://pre-commit.com/hooks.html)
+
 Then install the pre-commit hook
 
 ```bash
