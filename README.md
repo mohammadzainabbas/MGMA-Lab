@@ -24,7 +24,7 @@
 
 #### 1. Introduction
 
-
+__`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstructured_) can be analysed as a graph. 
 
 ```bash
 conda create -n mgma python=3 -y 
