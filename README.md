@@ -1,7 +1,5 @@
 ## Lab 01 - NetworkX 👨🏻‍💻
 
-</br>
-
 ### Table of contents
 
 - [Introduction](#introduction)
