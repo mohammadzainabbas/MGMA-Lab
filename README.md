@@ -30,6 +30,11 @@ __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstru
 
 #### 1.1. NetworkX
 
+[NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
+
+
+
 ```bash
 conda create -n mgma python=3 -y 
 ```
