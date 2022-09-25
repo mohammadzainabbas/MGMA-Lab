@@ -20,3 +20,10 @@ or
 pip install pre-commit
 ```
 
+Then install the pre-commit hook
+
+```bash
+pre-commit install
+```
+
+
