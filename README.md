@@ -8,6 +8,7 @@
   * [NetworkX](#network-x)
 - [Dataset](#dataset)
   * [SNAP for Python](#snap-for-python)
+  * [SNAP for Python](#snap-for-python)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -43,7 +44,9 @@ For the purpose of this lab, we will use graph datasets. Instead of creating our
 
 [Snap.py](https://snap.stanford.edu/snappy/) is a Python interface for SNAP. SNAP is a general purpose, high performance system for analysis and manipulation of large networks. SNAP is written in C++ and optimized for maximum performance and compact graph representation. It easily scales to massive networks with hundreds of millions of nodes, and billions of edges.
 
-SNAP also provides some graph datasets which we will use in this lab.
+SNAP also provides some graph datasets which we will use in this lab. List of available datasets can be found [here](https://snap.stanford.edu/data/index.html).
+
+
 
 
 
