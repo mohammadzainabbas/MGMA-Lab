@@ -2,6 +2,25 @@
 
 </br>
 
+### Table of contents
+
+- [Introduction](#introduction)
+  * [GraphDB](#graph-db)
+  * [Apache Jena](#apache-jena)
+  * [Ontology](#ontology)
+    * [TBOX](#tbox)
+    * [ABOX](#abox)
+- [Dataset](#dataset)
+- [Preprocess](#preprocess)
+- [Generate TBOX](#generate-tbox)
+- [Generate ABOX](#generate-abox)
+
+---
+
+<a id="introduction" />
+
+#### 1. Introduction
+
 ```bash
 conda create -n mgma python=3 -y 
 ```
