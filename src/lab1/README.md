@@ -70,7 +70,7 @@ cd MGMA-Lab/src/lab1
 
 #### 3.1. Create new enviornment
 
-Before starting, you may have to create new enviornment for the lab. Kindly, checkout the documentation for creating an new environment.
+Before starting, you may have to create new enviornment for the lab. Kindly, checkout the [documentation]() for creating an new environment.
 
 #
 
