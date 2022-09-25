@@ -3,7 +3,6 @@
 ### Table of contents
 
 - [Introduction](#introduction)
-- [About the repo](#about-repo)
 - [Labs](#labs)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
