@@ -1,6 +1,6 @@
-## Lab 01 - NetworkX
+## Lab 01 - NetworkX 👨🏻‍💻
 
-
+</br>
 
 ```bash
 conda create -n mgma python=3 -y 
