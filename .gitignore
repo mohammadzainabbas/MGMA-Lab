@@ -1,3 +1,6 @@
+# Ignore these folders
+.vscode
+
 # Ignore ipynb_checkpoints
 .ipynb_checkpoints
 
