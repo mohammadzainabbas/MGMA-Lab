@@ -13,3 +13,6 @@ dependencies:
     - tensorflow-macos
     - tensorflow-metal  ## optional, but recommended
     - torch ## if you want to use pytorch as well
+    - torchvision ## if you want to use pytorch as well
+    - matplotlib ## if you want to plot your data
+    - plotly ## if you want to plot your data
