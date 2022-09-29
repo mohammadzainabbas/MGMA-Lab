@@ -16,11 +16,8 @@ conda install mamba -n base -c conda-forge
 Now, you can create a new env via
 
 ```bash
-mamba env create -n machine_learning -f docs/config/tf-metal-arm64.yaml
+mamba env create -n mgma -f docs/config/mgma_env.yaml
 ```
-
-
-
 
 ### Installation Commands
 
