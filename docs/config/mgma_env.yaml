@@ -18,4 +18,4 @@ dependencies:
     - plotly ## if you want to plot your data
     - snap
     - networkx[default]
-    - mayavi
+    - 
