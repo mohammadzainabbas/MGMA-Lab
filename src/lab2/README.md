@@ -3,7 +3,7 @@
 ### Table of contents
 
 - [Introduction](#introduction)
-  * [NetworkX](#network-x)
+  * [Influence Models](#influence-models)
 - [Dataset](#dataset)
   * [SNAP for Python](#snap-for-python)
   * [WormNet v3](#wormnet-v3)
@@ -21,9 +21,10 @@ __`Data drives the world.`__ Nowadays, most of the data (_structured_ or _unstru
 
 In this lab, we will focus on some basic graph algorithms and see how we can utilise these algorithms to efficiently analyse our data. Since, there exist many similarities between graph theory and network science, you will see us using network science related packages as well. 
 
-<a id="network-x" />
 
-#### 1.1. NetworkX
+<a id="influence-models" />
+
+#### 1.1. Influence Models
 
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
