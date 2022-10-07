@@ -1,4 +1,4 @@
-## Lab 01 - NetworkX 👨🏻‍💻
+## Lab 02 - Influence Models 👨🏻‍💻
 
 ### Table of contents
 
