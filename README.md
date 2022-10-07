@@ -7,6 +7,7 @@
   * [Main Topics](#main-topics)
 - [Labs](#labs)
   * [Lab 01 - NetworkX](#lab-1)
+  * [Lab 02 - Influence Models](#lab-2)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -58,6 +59,14 @@ The main aim of this repository is to keep track of the work we have done in __M
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab1) 
+
+<a id="lab-2" />
+
+#### 3.2. Lab 02 - Influence Models
+
+[NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2) 
 
 #
 
