@@ -12,19 +12,8 @@ import numpy as np
 
 ### use to flatten to observation 
 def flatten(obs):
-  p=[]  # obs = timestep.observation 
-  p = np.append(obs.ems.x1,obs.ems.x2)
-  p = np.append(p,obs.ems.y1)
-  p = np.append(p,obs.ems.y2)
-  p = np.append(p,obs.ems.z1)
-  p = np.append(p,obs.ems.z2)
-  p = np.append(p,obs.ems_mask.flatten())
-  p = np.append(p,obs.items.x_len)
-  p = np.append(p,obs.items.y_len)
-  p = np.append(p,obs.items.z_len)
-  p = np.append(p,obs.items_mask.flatten())
-  p = np.append(p,obs.items_placed.flatten())
-  return p 
+  p = np.concatenate((obs.ems.x1, obs.ems.x2, obs.ems.y1, obs.ems.y2, obs.ems.z1, obs.ems.z2, obs.ems_mask.flatten(), obs.items.x_len, obs.items.y_len, obs.items.z_len, obs.items_mask.flatten(), obs.items_placed.flatten()))
+  return p
 class FeedForwardNN(nn.Module):
   def __init__(self):
     super(FeedForwardNN, self).__init__()
