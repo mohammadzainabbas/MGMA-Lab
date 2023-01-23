@@ -108,13 +108,7 @@ class PPO:
 
    
   def rollout(self):
-    # Batch data
-    batch_obs = []             # batch observations
-    batch_acts = []            # batch actions
-    batch_log_probs = []       # log probs of each action
-    batch_rews = []            # batch rewards
-    batch_rtgs = []            # batch rewards-to-go
-    batch_lens = []            # episodic lengths in batch
+    batch_obs, batch_acts, batch_log_probs, batch_rews, batch_rtgs, batch_lens = [], [], [], [], [], []          
     step_fn = jax.jit(self.env.step)
     reset_fn = jax.jit(self.env.reset)
     t = 0 
