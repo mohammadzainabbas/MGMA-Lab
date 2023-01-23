@@ -22,8 +22,17 @@ In the get_action method, use the torch.gather function instead of the torch.non
 
 Instead of using a while loop in the rollout method, use a for loop with a range of self.timesteps_per_batch to iterate over the number of required timesteps.
 
+In the rollout method, consider using JIT compilation (e.g. jax.jit) on the step_fn and reset_fn function calls to speed up the execution of the environment's step and reset methods.
 
+Lastly, you can consider using the torch multiprocessing library to parallelize the environment steps and the network computations.
 
+Another way to optimize the code is to use the torch.optim library's built-in optimization algorithms instead of manually updating the model's parameters. This can reduce the amount of code and make the training process more efficient.
+
+Also, you can use the torch.nn.DataParallel wrapper around the actor and critic network models, this will allow you to train on multiple GPUs.
+
+One more thing, you can use the torch.autograd.profiler to profile your code and find the bottlenecks in the code, and then optimize the specific parts of the code that take the most time.
+
+Another way you can optimize is by using the torch.cuda library to perform computations on the GPU. This will increase the speed of the computations as the GPU is designed for parallel processing.
 
 """
 
