@@ -137,6 +137,27 @@ class PPO:
             batch_rtgs.append(self.compute_rtgs(ep_rews))
         #update
         self.update(batch_obs,batch_acts,batch_log_probs,batch_rtgs,batch_lens)
+
+    def learn(self, num_iterations):
+        for i in range(num_iterations):
+            self.rollout()
+
+    def evaluate(self, num_episodes):
+        rewards = []
+        for i in range(num_episodes):
+            state, timestep = self.env.reset()
+            obs = flatten(timestep.observation)
+            episode_reward = 0
+            while not timestep.last():
+                action_tensor = np.ones(self.act_dim)
+                action_id, _, _ = self.get_action(obs, action_tensor)
+                next_timestep = self.env.step(action_id)
+                obs = flatten(next_timestep.observation)
+                episode_reward += next_timestep.reward
+                state, timestep = next_timestep
+            rewards.append(episode_reward)
+        return rewards
+
     def update(self, batch_obs, batch_acts, batch_log_probs, batch_rtgs, batch_lens):
         """
         In this function, we first convert the input lists into numpy arrays, then we update the actor and critic networks using the PPO algorithm.
