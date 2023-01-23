@@ -7,6 +7,23 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import numpy as np
+
+### use to flatten to observation 
+def flatten(obs):
+  p=[]  # obs = timestep.observation 
+  p = np.append(obs.ems.x1,obs.ems.x2)
+ #p = np.append(p,obs.ems.x2)
+  p = np.append(p,obs.ems.y1)
+  p = np.append(p,obs.ems.y2)
+  p = np.append(p,obs.ems.z1)
+  p = np.append(p,obs.ems.z2)
+  p = np.append(p,obs.ems_mask.flatten())
+  p = np.append(p,obs.items.x_len)
+  p = np.append(p,obs.items.y_len)
+  p = np.append(p,obs.items.z_len)
+  p = np.append(p,obs.items_mask.flatten())
+  p = np.append(p,obs.items_placed.flatten())
+  return p 
 class FeedForwardNN(nn.Module):
   def __init__(self):
     super(FeedForwardNN, self).__init__()
