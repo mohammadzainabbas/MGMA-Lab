@@ -16,7 +16,6 @@ import numpy as np
 def flatten(obs):
   p=[]  # obs = timestep.observation 
   p = np.append(obs.ems.x1,obs.ems.x2)
- #p = np.append(p,obs.ems.x2)
   p = np.append(p,obs.ems.y1)
   p = np.append(p,obs.ems.y2)
   p = np.append(p,obs.ems.z1)
