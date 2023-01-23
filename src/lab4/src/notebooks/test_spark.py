@@ -112,6 +112,13 @@ class PPO:
         #update
         self.update(batch_obs,batch_acts,batch_log_probs,batch_rtgs,batch_lens)
     def update(self, batch_obs, batch_acts, batch_log_probs, batch_rtgs, batch_lens):
+        """
+        In this function, we first convert the input lists into numpy arrays, then we update the actor and critic networks using the PPO algorithm.
+
+        We use Jax's grad function to compute the gradients of the actor and critic loss functions, and jit function to speed up the computation.
+
+        You may need to adjust the current code to make it work with Jax, as the current codebase is using torch and numpy.
+        """
         obs = np.array(batch_obs)
         acts = np.array(batch_acts)
         log_probs = np.array(batch_log_probs)
