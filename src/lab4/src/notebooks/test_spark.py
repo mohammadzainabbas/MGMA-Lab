@@ -13,6 +13,21 @@ def flatten(obs):
     """
     return np.concatenate((obs.ems.x1, obs.ems.x2, obs.ems.y1, obs.ems.y2, obs.ems.z1, obs.ems.z2, obs.ems_mask.flatten(), obs.items.x_len, obs.items.y_len, obs.items.z_len, obs.items_mask.flatten(), obs.items_placed.flatten()))
 
+"""
+In the FeedForwardNN class, use the torch.no_grad() context when converting the numpy array to a PyTorch tensor to prevent the creation of unnecessary gradients, which can save memory and computation time.
+
+In the PPO class, the compute_rtgs method can be optimized by using the torch.cumsum function to compute the cumulative sum of the rewards in reverse order. This will reduce the number of iterations required to compute the rewards.
+
+In the get_action method, use the torch.gather function instead of the torch.nonzero function to retrieve the valid indices. This will be faster as it avoids creating a new tensor.
+
+Instead of using a while loop in the rollout method, use a for loop with a range of self.timesteps_per_batch to iterate over the number of required timesteps.
+
+
+
+
+"""
+
+
 class FeedForwardNN(nn.Module):
     def __init__(self, in_dim, out_dim):
         super(FeedForwardNN, self).__init__()
