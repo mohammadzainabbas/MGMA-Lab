@@ -221,12 +221,9 @@ class PPO:
   def evaluate(self, batch_obs,batch_acts):
     # Query critic network for a value V for each obs in batch_obs.
     V = self.critic(batch_obs).squeeze()
-    #print("in evaluate , value function after critic ", V)
-    # Calculate the log probabilities of batch actions using most 
-    # recent actor network.
+    # Calculate the log probabilities of batch actions using most recent actor network.
     # This segment of code is similar to that in get_action()
     mean = self.actor(batch_obs)
-    #print("after actor ", mean)
     dist = Categorical(mean)
     log_probs = dist.log_prob(batch_acts)
     # Return predicted values V and log probs log_probs
