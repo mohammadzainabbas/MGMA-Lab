@@ -11,8 +11,7 @@ def flatten(obs):
     """
     This function takes in the observation object and concatenates the relevant fields of the object into a single 1D array, which is returned.
     """
-    p = np.concatenate((obs.ems.x1, obs.ems.x2, obs.ems.y1, obs.ems.y2, obs.ems.z1, obs.ems.z2, obs.ems_mask.flatten(), obs.items.x_len, obs.items.y_len, obs.items.z_len, obs.items_mask.flatten(), obs.items_placed.flatten()))
-    return p
+    return np.concatenate((obs.ems.x1, obs.ems.x2, obs.ems.y1, obs.ems.y2, obs.ems.z1, obs.ems.z2, obs.ems_mask.flatten(), obs.items.x_len, obs.items.y_len, obs.items.z_len, obs.items_mask.flatten(), obs.items_placed.flatten()))
 
 class FeedForwardNN(nn.Module):
     def __init__(self, in_dim, out_dim):
