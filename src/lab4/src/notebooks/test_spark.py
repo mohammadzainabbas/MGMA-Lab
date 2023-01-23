@@ -1,10 +1,8 @@
 from torch.distributions import MultivariateNormal,Categorical
 from torch.optim import Adam
 import pandas as pd
-
-import jax
+import jax, jumanji
 import jax.numpy as jnp
-import jumanji
 from jumanji.wrappers import AutoResetWrapper
 
 import torch
