@@ -71,12 +71,9 @@ class PPO:
     reset_fn = jax.jit(self.env.reset)
     t = 0 
     while t < self.timesteps_per_batch:
-      # Rewards this episode
-      ep_rews = []
-      key = jax.random.PRNGKey(0)
+      ep_rews, key = [], jax.random.PRNGKey(0)
       state, timestep = reset_fn(key)
-      ep_t = 0
-      rew = 0.0
+      ep_t, rew = 0, 0.0
       while rew == 0.0:
         # Increment timesteps ran this batch so far
         t += 1
