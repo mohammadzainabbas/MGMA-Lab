@@ -6,6 +6,7 @@ from torch.distributions import Categorical
 import jax.numpy as np
 from jax import grad, jit, vmap
 from jax.ops import index_add, index_update
+import jumanji
 
 def flatten(obs):
     """
@@ -185,3 +186,20 @@ class PPO:
             grads_critic = grad(critic_loss)(self.critic[1])
             self.actor[1] = self.actor_optim(self.actor[1], grads_actor, self.lr)
             self.critic[1] = self.critic_optim(self.critic[1], grads_critic, self.lr)
+
+
+
+# Initialize the environment
+env = jumanji.make("BinPack-toy-v0")
+
+# Initialize the PPO agent
+agent = PPO(env)
+
+# Train the agent for a specified number of iterations
+num_iterations = 100
+agent.learn(num_iterations)
+
+# Evaluate the agent's performance
+num_episodes = 10
+rewards = agent.evaluate(num_episodes)
+print(f'Average reward over {num_episodes} episodes: {np.mean(rewards)}')
