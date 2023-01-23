@@ -59,54 +59,31 @@ class PPO:
     
     
   def _init_hyperparameters(self):
-    # Default values for hyperparameters, will need to change later.
     self.timesteps_per_batch = 2  #4800            # timesteps per batch
-    #self.max_timesteps_per_episode = 1600      # timesteps per episode
     self.gamma = 0.95
     self.n_updates_per_iteration = 5
     self.clip = 0.2 # As recommended by the paper
     self.lr = 0.005
 
-  def compute_rtgs(self, batch_rews): 
-    # The rewards-to-go (rtg) per episode per batch to return.
-    # The shape will be (num timesteps per episode)
+  def compute_rtgs(self, batch_rews):
     batch_rtgs = []
-    #print("batch_rewards ",batch_rews)
-    # Iterate through each episode backwards to maintain same order
-    # in batch_rtgs
     for ep_rews in reversed(batch_rews):
       discounted_reward = 0 # The discounted reward so far
       for rew in reversed(ep_rews):
         discounted_reward = rew + discounted_reward * self.gamma
         batch_rtgs.insert(0, discounted_reward)
-    # Convert the rewards-to-go into a tensor
-    #print("discounted reward of batch", batch_rtgs)
     batch_rtgs = torch.tensor(batch_rtgs, dtype=torch.float)
     return batch_rtgs
 
   def get_action(self,obs,action_tensor):
-    #flatten observation  p = flatten(timestep.observation)
-    # inside critic and actor by converting it to np.array(p) by actor you will get action
      p1 = self.actor(obs)
      indices = torch.nonzero(action_tensor)  #getting valid indicies 
      p2 = p1[indices] # getting proper valid action probablities
      p2= torch.reshape(p2,(-1,))  # reshapping it to make it 1D
      probs = Categorical( logits = p2) #logits un-normalized probablities 
      a=probs.sample() #actions
-     #print("in get_action , shape of valid probs", p2.shape)
-     # probs.log_prob(a) # softmax probablity of that action
      action_id = indices[a.item()].item()  # valid action value 
-     return action_id, a, probs.log_prob(a)  
-
-    #  ind = action_mask.index[[action_mask[0] == True]]
-    #  df = pd.DataFrame(p1.detach().numpy())
-    #  probs = Categorical(probs=torch.tensor(list(df.iloc[ind][0])))
-    #  action = probs.sample()
-    #  action_id = df.iloc[ind][0][action].index
-     
-
-
-   
+     return action_id, a, probs.log_prob(a)
   def rollout(self):
     batch_obs, batch_acts, batch_log_probs, batch_rews, batch_rtgs, batch_lens = [], [], [], [], [], []          
     step_fn = jax.jit(self.env.step)
