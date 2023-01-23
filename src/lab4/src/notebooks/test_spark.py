@@ -3,6 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.distributions import Categorical
+import jax.numpy as np
+from jax import grad, jit, vmap
+from jax.ops import index_add, index_update
 
 class FeedForwardNN(nn.Module):
     def __init__(self, in_dim, out_dim):
@@ -16,10 +19,6 @@ class FeedForwardNN(nn.Module):
         activation1 = F.relu(self.layer1(obs))
         output = F.relu(self.layer2(activation1))
         return output
-
-import jax.numpy as np
-from jax import grad, jit, vmap
-from jax.ops import index_add, index_update
 
 class PPO:
     def __init__(self, env):
