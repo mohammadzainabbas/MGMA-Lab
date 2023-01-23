@@ -75,9 +75,7 @@ class PPO:
       state, timestep = reset_fn(key)
       ep_t, rew = 0, 0.0
       while rew == 0.0:
-        # Increment timesteps ran this batch so far
         t += 1
-        # Collect observation
         obs = flatten(timestep.observation)
         batch_obs.append(obs)
         num_ems, num_items = self.env.action_spec().num_values
@@ -85,18 +83,12 @@ class PPO:
         action_tensor = torch.tensor(np.array(action_mask),dtype=torch.float)
         ems_item_id, action_,log_prob  = self.get_action(obs,action_tensor)
         ems_id, item_id = jnp.divmod(ems_item_id, num_items)
-        # Wrap the action as a jax array of shape (2,)
         action = jnp.array([ems_id, item_id])
         state,timestep = step_fn(state, action)
         rew = np.array(timestep.reward.flatten())[0]
-        # Collect reward, action, and log prob
         ep_rews.append(rew)
-        #print("reward ", rew)
         batch_acts.append(action_)
-        
-        #print("action_  ",action_)
         batch_log_probs.append(log_prob)
-        #print("log_probs ", log_prob)
         ep_t += 1
       # Collect episodic length and rewards
       batch_lens.append(ep_t + 1) # plus 1 because timestep starts at 0
@@ -114,7 +106,6 @@ class PPO:
     while t_so_far < total_timesteps:              # ALG STEP 2
       batch_obs, batch_acts,batch_log_probs, batch_rtgs, batch_lens,rew = self.rollout()
       episode_reward.append(rew)
-      # Calculate how many timesteps we collected this batch   
       t_so_far += np.sum(batch_lens)
       V, _ = self.evaluate(batch_obs, batch_acts)
       # Calculate advantage
@@ -143,14 +134,10 @@ class PPO:
     return episode_reward
     
   def evaluate(self, batch_obs,batch_acts):
-    # Query critic network for a value V for each obs in batch_obs.
-    V = self.critic(batch_obs).squeeze()
-    # Calculate the log probabilities of batch actions using most recent actor network.
-    # This segment of code is similar to that in get_action()
+    V = self.critic(batch_obs).squeeze()   # Query critic network for a value V for each obs in batch_obs.
+    # Calculate the log probabilities of batch actions using most recent actor network. This segment of code is similar to that in get_action()
     mean = self.actor(batch_obs)
     dist = Categorical(mean)
     log_probs = dist.log_prob(batch_acts)
-    # Return predicted values V and log probs log_probs
-    return V, log_probs
+    return V, log_probs # Return predicted values V and log probs log_probs
  
-  
