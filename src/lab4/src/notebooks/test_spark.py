@@ -121,8 +121,7 @@ class PPO:
         surr1 = ratios * A_k
         surr2 = torch.clamp(ratios, 1 - self.clip, 1 + self.clip) * A_k
         actor_loss = (-torch.min(surr1, surr2)).mean()
-        # Calculate gradients and perform backward propagation for actor 
-        # network
+        # Calculate gradients and perform backward propagation for actor network
         self.actor_optim.zero_grad()
         actor_loss.backward()
         self.actor_optim.step()
