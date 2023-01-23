@@ -125,11 +125,7 @@ class PPO:
       # Rewards this episode
       ep_rews = []
       key = jax.random.PRNGKey(0)
-      ###############################
-      #jax.jit(env.reset)(key)
       state, timestep = reset_fn(key)
-     
-      ###############################
       ep_t = 0
       rew = 0.0
       #for ep_t in range(self.max_timesteps_per_episode):
@@ -137,34 +133,17 @@ class PPO:
         # Increment timesteps ran this batch so far
         t += 1
         # Collect observation
-        ################################################
         obs = flatten(timestep.observation)
-        #obs = torch.tensor(obs, dtype=torch.float)
         batch_obs.append(obs)
-        
         num_ems, num_items = self.env.action_spec().num_values
         action_mask = timestep.observation.action_mask.flatten()
         action_tensor = torch.tensor(np.array(action_mask),dtype=torch.float)
-         
-        
-        #----------------------------------------------- get from NN
-        #ems_item_id = self.get_action(obs,action_mask)
         ems_item_id, action_,log_prob  = self.get_action(obs,action_tensor)
-        # -------------------------------------------------
         ems_id, item_id = jnp.divmod(ems_item_id, num_items)
-
         # Wrap the action as a jax array of shape (2,)
         action = jnp.array([ems_id, item_id])
-
-        #action = torch.tensor(action, dtype=torch.float)
-        #ems_item_id, action_,log_prob  = self.get_action(obs,action_mask)
-        #mean = self.actor(obs)
-        #dist = MultivariateNormal(mean, self.cov_mat)
-        #log_prob = dist.log_prob(action)
-        #batch_states.append(state)
         state,timestep = step_fn(state, action)
         rew = np.array(timestep.reward.flatten())[0]
-        ##################################################
         # Collect reward, action, and log prob
         ep_rews.append(rew)
         #print("reward ", rew)
