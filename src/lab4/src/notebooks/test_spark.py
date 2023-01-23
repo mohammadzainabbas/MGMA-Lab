@@ -111,3 +111,23 @@ class PPO:
             batch_rtgs.append(self.compute_rtgs(ep_rews))
         #update
         self.update(batch_obs,batch_acts,batch_log_probs,batch_rtgs,batch_lens)
+    def update(self, batch_obs, batch_acts, batch_log_probs, batch_rtgs, batch_lens):
+        obs = np.array(batch_obs)
+        acts = np.array(batch_acts)
+        log_probs = np.array(batch_log_probs)
+        rtgs = np.array(batch_rtgs)
+        lens = np.array(batch_lens)
+        self.actor_optim = self._init_optimizer()
+        self.critic_optim = self._init_optimizer()
+        for _ in range(self.n_updates_per_iteration):
+            old_log_probs = self.actor[0](self.actor[1], obs)[np.arange(len(batch_obs)), acts]
+            ratios = np.exp(log_probs - old_log_probs)
+            advantages = rtgs - self.critic[0](self.critic[1], obs)
+            surrogate_obj = ratios * advantages
+            surrogate_obj_clipped = np.minimum(ratios * advantages, np.ones_like(ratios) * self.clip)
+            actor_loss = -np.mean(surrogate_obj_clipped)
+            critic_loss = np.mean((rtgs - self.critic[0](self.critic[1], obs))**2)
+            grads_actor = grad(actor_loss)(self.actor[1])
+            grads_critic = grad(critic_loss)(self.critic[1])
+            self.actor[1] = self.actor_optim(self.actor[1], grads_actor, self.lr)
+            self.critic[1] = self.critic_optim(self.critic[1], grads_critic, self.lr)
