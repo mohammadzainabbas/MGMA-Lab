@@ -175,51 +175,30 @@ class PPO:
         #print("log_probs ", log_prob)
         ep_t += 1
       # Collect episodic length and rewards
-      #print("end of episode", ep_t)
       batch_lens.append(ep_t + 1) # plus 1 because timestep starts at 0
-      #print("episode length  ," , ep_t+1)
       batch_rews.append(ep_rews) 
-      #print("episode rewards ", ep_rews)
       # Reshape data as tensors in the shape specified before returning
-    #print("end of batch ")
     batch_obs = torch.tensor(batch_obs, dtype=torch.float)
-    #print("batch_observation ", batch_obs)
     batch_acts = torch.tensor(batch_acts, dtype=torch.float)
-    #print("batch_action ", batch_acts)
     batch_log_probs = torch.tensor(batch_log_probs, dtype=torch.float)
-    #print("batch log_probs ",batch_log_probs)
-    # ALG STEP #4
-    #print("batch_rewards ",batch_rews)
     batch_rtgs = self.compute_rtgs(batch_rews)
-    #print("discounted rewards ",batch_rtgs)
-    #env.render(state)
-    # Return the batch data
     return batch_obs, batch_acts,batch_log_probs, batch_rtgs, batch_lens,rew
 
   def learn(self, total_timesteps):
     t_so_far = 0 # Timesteps simulated so far
     episode_reward = []
-    #print("total timesteps ",total_timesteps, " updates per iteration ", self.n_updates_per_iteration)
     while t_so_far < total_timesteps:              # ALG STEP 2
-      # Increment t_so_far somewhere below
-      # ALG STEP 3
       batch_obs, batch_acts,batch_log_probs, batch_rtgs, batch_lens,rew = self.rollout()
       episode_reward.append(rew)
       # Calculate how many timesteps we collected this batch   
       t_so_far += np.sum(batch_lens)
-      #print("t_so_far ",t_so_far)
-
-      # Calculate V_{phi, k}
       V, _ = self.evaluate(batch_obs, batch_acts)
-      #print(" after evaluate ", V , _)
-      # ALG STEP 5
       # Calculate advantage
       A_k = batch_rtgs - V.detach()
       # Normalize advantages
       A_k = (A_k - A_k.mean()) / (A_k.std() + 1e-10)
       for i in range(self.n_updates_per_iteration):
         # Calculate V_phi and pi_theta(a_t | s_t)    
-        #print(" update no per iteration ",i)
         V, curr_log_probs = self.evaluate(batch_obs, batch_acts)
         # Calculate ratios
         ratios = torch.exp(curr_log_probs - batch_log_probs)
@@ -227,14 +206,12 @@ class PPO:
         surr1 = ratios * A_k
         surr2 = torch.clamp(ratios, 1 - self.clip, 1 + self.clip) * A_k
         actor_loss = (-torch.min(surr1, surr2)).mean()
-        #print("actor_loss ", actor_loss)
         # Calculate gradients and perform backward propagation for actor 
         # network
         self.actor_optim.zero_grad()
         actor_loss.backward()
         self.actor_optim.step()
         critic_loss = nn.MSELoss()(V, batch_rtgs)
-        #print("critic_loss ", critic_loss)
         # Calculate gradients and perform backward propagation for critic network    
         self.critic_optim.zero_grad()    
         critic_loss.backward()    
