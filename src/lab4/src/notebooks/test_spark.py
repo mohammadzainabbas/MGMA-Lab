@@ -34,34 +34,22 @@ class FeedForwardNN(nn.Module):
     super(FeedForwardNN, self).__init__()
     self.layer1 = nn.Linear(in_dim, 64)
     self.layer2 = nn.Linear(64, out_dim)
-    #self.layer3 = nn.Softmax()
   def forward(self, obs):
   # Convert observation to tensor if it's a numpy array
     if isinstance(obs, np.ndarray):
-      obs = torch.tensor(obs, dtype=torch.float)
-      #print("inside tensor")
-  
+      obs = torch.tensor(obs, dtype=torch.float)  
     activation1 = F.relu(self.layer1(obs))
     output = F.relu(self.layer2(activation1))
-    #output = self.layer3(activation2)
     return output
 
 class PPO:
   def __init__(self,env):
     self._init_hyperparameters()
     self.env = env
-    #####################################
     self.obs_dim = 380
     self.act_dim = 800
-    ######################################
-    
-
-    #initiate actor and critic
     self.actor = FeedForwardNN(self.obs_dim,self.act_dim)
     self.critic = FeedForwardNN(self.obs_dim,1)
-
-      # Create our variable for the matrix.
-    # Note that I chose 0.5 for stdev arbitrarily.
     self.cov_var = torch.full(size=(self.act_dim,), fill_value=0.5)
     
     # Create the covariance matrix
