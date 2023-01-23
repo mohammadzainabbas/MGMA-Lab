@@ -115,9 +115,6 @@ class PPO:
     batch_rews = []            # batch rewards
     batch_rtgs = []            # batch rewards-to-go
     batch_lens = []            # episodic lengths in batch
-                 # for animation
-    # Number of timesteps run so far this batch´
-    
     step_fn = jax.jit(self.env.step)
     reset_fn = jax.jit(self.env.reset)
     t = 0 
@@ -128,7 +125,6 @@ class PPO:
       state, timestep = reset_fn(key)
       ep_t = 0
       rew = 0.0
-      #for ep_t in range(self.max_timesteps_per_episode):
       while rew == 0.0:
         # Increment timesteps ran this batch so far
         t += 1
