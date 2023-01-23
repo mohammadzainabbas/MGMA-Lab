@@ -35,13 +35,10 @@ class FeedForwardNN(nn.Module):
     self.layer1 = nn.Linear(in_dim, 64)
     self.layer2 = nn.Linear(64, out_dim)
   def forward(self, obs):
-  # Convert observation to tensor if it's a numpy array
-    if isinstance(obs, np.ndarray):
-      obs = torch.tensor(obs, dtype=torch.float)  
+    if isinstance(obs, np.ndarray): obs = torch.tensor(obs, dtype=torch.float)  
     activation1 = F.relu(self.layer1(obs))
     output = F.relu(self.layer2(activation1))
     return output
-
 class PPO:
   def __init__(self,env):
     self._init_hyperparameters()
@@ -51,13 +48,10 @@ class PPO:
     self.actor = FeedForwardNN(self.obs_dim,self.act_dim)
     self.critic = FeedForwardNN(self.obs_dim,1)
     self.cov_var = torch.full(size=(self.act_dim,), fill_value=0.5)
-    
-    # Create the covariance matrix
     self.cov_mat = torch.diag(self.cov_var)
     self.actor_optim = Adam(self.actor.parameters(), lr=self.lr)
     self.critic_optim = Adam(self.critic.parameters(), lr=self.lr)
-    
-    
+
   def _init_hyperparameters(self):
     self.timesteps_per_batch = 2  #4800            # timesteps per batch
     self.gamma = 0.95
