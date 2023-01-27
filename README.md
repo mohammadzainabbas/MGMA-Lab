@@ -69,6 +69,28 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 <!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2) 
+#
+
+  * [Lab 03 - Introduction to Spark](#lab-3)
+  * [Lab 04 - Advanced Spark](#lab-4)
+
+<a id="lab-3" />
+
+#### 3.2. Lab 02 - Influence Models
+
+<!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
+
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2) 
+
+#
+
+<a id="lab-4" />
+
+#### 3.2. Lab 02 - Influence Models
+
+<!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
+
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2) 
 
 #
 
