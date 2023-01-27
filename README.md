@@ -81,7 +81,7 @@ One of the most popular ways to use Spark is through [`PySpark`](https://spark.a
 
 We will start by setting up a Spark environment and then move on to loading data into Spark. We will then learn how to perform basic operations such as filtering, mapping, and reducing data. We will also learn how to use the DataFrame API to perform more advanced operations on our data.
 
-By the end of this lab, you will have a solid understanding of how to use Spark and PySpark to process and analyze large amounts of data. So, let's get started!
+By the end of this lab, you will have a solid understanding of how to use `PySpark` to process and analyze large amounts of data. So, let's get started!
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab3) 
 
