@@ -34,8 +34,6 @@ pre-commit install
 
 you will see
 
-```txt
-pre-commit installed at .git/hooks/pre-commit
-```
+> pre-commit installed at .git/hooks/pre-commit
 
 This means pre-commit hook were installed successfully.
