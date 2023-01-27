@@ -75,7 +75,13 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.3. Lab 03 - Introduction to Spark
 
-<!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
+In this lab, we will be introduced to the powerful big data processing framework, Spark. Spark is an open-source, distributed computing system that can handle large amounts of data with ease. It is built on top of the Hadoop ecosystem and can process data in a variety of formats, including HDFS, HBase, and local file systems.
+
+One of the most popular ways to use Spark is through PySpark, which is the Python library for Spark. PySpark allows us to use the powerful data processing capabilities of Spark with the ease and familiarity of Python. In this lab, we will be using PySpark to work with data and perform various operations on it.
+
+We will start by setting up a Spark environment and then move on to loading data into Spark. We will then learn how to perform basic operations such as filtering, mapping, and reducing data. We will also learn how to use the DataFrame API to perform more advanced operations on our data.
+
+By the end of this lab, you will have a solid understanding of how to use Spark and PySpark to process and analyze large amounts of data. So, let's get started!
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab3) 
 
