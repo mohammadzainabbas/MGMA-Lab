@@ -70,7 +70,7 @@ In this lab, we will be learning about influence models and how they can be used
 
 We will be using the [NetworkX](https://networkx.org/) package in Python to implement and visualize these models. [NetworkX](https://networkx.org/) is a powerful library for creating and manipulating graphs and networks in Python. It provides a variety of tools for analyzing network structure and dynamics, including the ability to create and manipulate graphs, compute centrality measures, and perform community detection.
 
-In this lab, we will be using NetworkX to implement and visualize the [`Independent Cascade Model`](https://www.google.com/search?q=Independent+Cascade+Model) and the Linear Threshold Model. These models are commonly used in social networks to model the spread of information or influence through a network. We will be working with real-world datasets to understand how these models work and how they can be used to analyze network data.
+In this lab, we will be using NetworkX to implement and visualize the [`Independent Cascade Model`](https://www.google.com/search?q=Independent+Cascade+Model) and the [`Linear Threshold Model`](https://www.google.com/search?q=Linear+Threshold+Model). These models are commonly used in social networks to model the spread of information or influence through a network. We will be working with real-world datasets to understand how these models work and how they can be used to analyze network data.
 
 By the end of this lab, you will have a solid understanding of how influence models can be used to understand the spread of information in a network and how to use the NetworkX library to implement and visualize these models. So, let's get started!
 
