@@ -60,7 +60,7 @@ The main aim of this repository is to keep track of the work we have done in __M
 
 [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 
-Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab1) 
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab1).
 
 <a id="lab-2" />
 
@@ -68,7 +68,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 <!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
 
-Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2) 
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2).
 #
 
 <a id="lab-3" />
