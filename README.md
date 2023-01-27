@@ -95,7 +95,7 @@ In this lab, we will be implementing the [`PageRank`](https://en.wikipedia.org/w
 
 The basic idea behind the `PageRank` algorithm is that a webpage is considered important if it is linked to by other important webpages. The algorithm assigns a score to each webpage, which is based on the number and importance of the webpages that link to it.
 
-We will be using PySpark to implement the `PageRank` algorithm in this lab. We will start by loading the data and creating a graph representation of the webpages. We will then implement the `PageRank` algorithm using the Spark RDD (Resilient Distributed Dataset) API and the DataFrame API.
+We will be using [`PySpark`](https://spark.apache.org/docs/latest/api/python/) to implement the `PageRank` algorithm in this lab. We will start by loading the data and creating a graph representation of the webpages. We will then implement the `PageRank` algorithm using the Spark RDD (Resilient Distributed Dataset) API and the DataFrame API.
 
 By the end of this lab, you will have a solid understanding of how to use Spark to implement the `PageRank` algorithm and how to use the RDD and DataFrame APIs to perform data processing tasks. So, let's get started!
 
