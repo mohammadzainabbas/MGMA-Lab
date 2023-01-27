@@ -91,7 +91,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.4. Lab 04 - PageRank in Spark
 
-<!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
+
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab4) 
 
