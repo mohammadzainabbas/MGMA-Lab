@@ -72,7 +72,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 #
 
   * [Lab 03 - Introduction to Spark](#lab-3)
-  * [Lab 04 - Advanced Py Spark](#lab-4)
+  * [Lab 04 - PageRank in Spark](#lab-4)
 
 <a id="lab-3" />
 
