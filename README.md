@@ -9,6 +9,7 @@
   * [Lab 01 - NetworkX](#lab-1)
   * [Lab 02 - Influence Models](#lab-2)
   * [Lab 03 - Introduction to Spark](#lab-3)
+  * [Lab 04 - Advanced Spark](#lab-4)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
