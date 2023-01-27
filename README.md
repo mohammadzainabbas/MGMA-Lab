@@ -75,7 +75,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.3. Lab 03 - Introduction to Spark
 
-In this lab, we will be introduced to the powerful big data processing framework, [`Spark`](https://spark.apache.org/). [`Apache Spark`](https://spark.apache.org/) is an open-source, distributed computing system that can handle large amounts of data with ease. It is built on top of the Hadoop ecosystem and can process data in a variety of formats, including HDFS, HBase, and local file systems.
+In this lab, we will be introduced to the powerful big data processing framework, [`Spark`](https://spark.apache.org/). [`Apache Spark`](https://spark.apache.org/) is an `open-source`, `distributed computing system` that can `handle large amounts of data` with ease. It is built on top of the [`Hadoop ecosystem`] and can process data in a variety of formats, including HDFS, HBase, and local file systems.
 
 One of the most popular ways to use Spark is through PySpark, which is the Python library for Spark. PySpark allows us to use the powerful data processing capabilities of Spark with the ease and familiarity of Python. In this lab, we will be using PySpark to work with data and perform various operations on it.
 
