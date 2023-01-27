@@ -91,7 +91,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.4. Lab 04 - PageRank in Spark
 
-In this lab, we will be implementing the [`PageRank`](https://en.wikipedia.org/wiki/PageRank) algorithm in Spark. PageRank is an algorithm used to measure the importance of a webpage within a set of webpages. It was originally developed by Google and is used as a key component in the Google search engine.
+In this lab, we will be implementing the [`PageRank`](https://en.wikipedia.org/wiki/PageRank) algorithm in [`PySpark`](https://spark.apache.org/docs/latest/api/python/). PageRank is an algorithm used to measure the importance of a webpage within a set of webpages. It was originally developed by Google and is used as a key component in the Google search engine.
 
 The basic idea behind the PageRank algorithm is that a webpage is considered important if it is linked to by other important webpages. The algorithm assigns a score to each webpage, which is based on the number and importance of the webpages that link to it.
 
