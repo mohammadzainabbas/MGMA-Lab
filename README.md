@@ -77,7 +77,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 In this lab, we will be introduced to the powerful big data processing framework, [`Spark`](https://spark.apache.org/). [`Apache Spark`](https://spark.apache.org/) is an `open-source`, `distributed computing system` that can `handle large amounts of data` with ease. It is built on top of the [`Hadoop ecosystem`](https://www.edureka.co/blog/hadoop-ecosystem) and can process data in a variety of formats, including `HDFS`, `HBase`, and `local file systems`.
 
-One of the most popular ways to use Spark is through [`PySpark`](https://spark.apache.org/docs/latest/api/python/), which is the Python library for Spark. PySpark allows us to use the powerful data processing capabilities of Spark with the ease and familiarity of Python. In this lab, we will be using PySpark to work with data and perform various operations on it.
+One of the most popular ways to use Spark is through [`PySpark`](https://spark.apache.org/docs/latest/api/python/), which is the Python library for Spark. [`PySpark`](https://spark.apache.org/docs/latest/api/python/) allows us to use the powerful data processing capabilities of Spark with the ease and familiarity of Python. In this lab, we will be using `PySpark` to work with data and perform various operations on it.
 
 We will start by setting up a Spark environment and then move on to loading data into Spark. We will then learn how to perform basic operations such as filtering, mapping, and reducing data. We will also learn how to use the DataFrame API to perform more advanced operations on our data.
 
