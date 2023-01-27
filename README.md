@@ -9,7 +9,7 @@
   * [Lab 01 - NetworkX](#lab-1)
   * [Lab 02 - Influence Models](#lab-2)
   * [Lab 03 - Introduction to Spark](#lab-3)
-  * [Lab 04 - Advanced Spark](#lab-4)
+  * [Lab 04 - PageRank in Spark](#lab-4)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
@@ -76,7 +76,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 <a id="lab-3" />
 
-#### 3.2. Lab 02 - Influence Models
+#### 3.2. Lab 03 - Introduction to Spark
 
 <!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
 
@@ -86,7 +86,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 <a id="lab-4" />
 
-#### 3.2. Lab 02 - Influence Models
+#### 3.2. Lab 04 - PageRank in Spark
 
 <!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
 
