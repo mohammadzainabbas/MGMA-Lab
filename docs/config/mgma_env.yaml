@@ -21,3 +21,5 @@ dependencies:
     # - mayavi
     - dash
     - jupyter-dash
+    - findspark
+    - pyspark
