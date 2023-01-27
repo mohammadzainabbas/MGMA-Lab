@@ -66,7 +66,13 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.2. Lab 02 - Influence Models
 
-<!-- [NetworkX](https://networkx.org/) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. -->
+In this lab, we will be learning about influence models and how they can be used to understand the spread of information or influence in a network. Influence models are mathematical models that aim to understand how information or influence spreads through a network of individuals or entities.
+
+We will be using the NetworkX package in Python to implement and visualize these models. NetworkX is a powerful library for creating and manipulating graphs and networks in Python. It provides a variety of tools for analyzing network structure and dynamics, including the ability to create and manipulate graphs, compute centrality measures, and perform community detection.
+
+In this lab, we will be using NetworkX to implement and visualize the Independent Cascade Model and the Linear Threshold Model. These models are commonly used in social networks to model the spread of information or influence through a network. We will be working with real-world datasets to understand how these models work and how they can be used to analyze network data.
+
+By the end of this lab, you will have a solid understanding of how influence models can be used to understand the spread of information in a network and how to use the NetworkX library to implement and visualize these models. So, let's get started!
 
 Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab2).
 #
@@ -83,7 +89,7 @@ We will start by setting up a Spark environment and then move on to loading data
 
 By the end of this lab, you will have a solid understanding of how to use `PySpark` to process and analyze large amounts of data. So, let's get started!
 
-Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab3) 
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab3).
 
 #
 
@@ -99,7 +105,7 @@ We will be using [`PySpark`](https://spark.apache.org/docs/latest/api/python/) t
 
 By the end of this lab, you will have a solid understanding of how to use Spark to implement the `PageRank` algorithm and how to use the RDD and DataFrame APIs to perform data processing tasks. So, let's get started!
 
-Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab4) 
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab4).
 
 #
 
