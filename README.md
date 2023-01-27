@@ -66,7 +66,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.2. Lab 02 - Influence Models
 
-In this lab, we will be learning about influence models and how they can be used to understand the spread of information or influence in a network. Influence models are mathematical models that aim to understand how information or influence spreads through a network of individuals or entities.
+In this lab, we will be learning about influence models and how they can be used to understand the spread of information or influence in a network. `Influence models` are mathematical models that aim to understand how information or influence spreads through a network of individuals or entities.
 
 We will be using the NetworkX package in Python to implement and visualize these models. NetworkX is a powerful library for creating and manipulating graphs and networks in Python. It provides a variety of tools for analyzing network structure and dynamics, including the ability to create and manipulate graphs, compute centrality measures, and perform community detection.
 
