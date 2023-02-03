@@ -10,6 +10,7 @@
   * [Lab 02 - Influence Models](#lab-2)
   * [Lab 03 - Introduction to Spark](#lab-3)
   * [Lab 04 - PageRank in Spark](#lab-4)
+  * [Lab 05 - Graph Embeddings](#lab-5)
 - [Setup](#setup)
   * [Create new enviornment](#create-new-env)
   * [Setup `pre-commit` hooks](#setup-pre-commit)
