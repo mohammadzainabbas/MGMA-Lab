@@ -110,6 +110,22 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #
 
+<a id="lab-5" />
+
+#### 3.5. Lab 05 - Graph Embeddings
+
+In this lab, we will be implementing the [`PageRank`](https://en.wikipedia.org/wiki/PageRank) algorithm in [`PySpark`](https://spark.apache.org/docs/latest/api/python/). `PageRank` is an algorithm used to measure the importance of a webpage within a set of webpages. It was originally developed by `Google` and is used as a key component in the _Google search engine_.
+
+The basic idea behind the `PageRank` algorithm is that a webpage is considered important if it is linked to by other important webpages. The algorithm assigns a score to each webpage, which is based on the number and importance of the webpages that link to it.
+
+We will be using [`PySpark`](https://spark.apache.org/docs/latest/api/python/) to implement the `PageRank` algorithm in this lab. We will start by loading the data and creating a graph representation of the webpages. We will then implement the `PageRank` algorithm using the [`Spark RDD (Resilient Distributed Dataset) API`](https://spark.apache.org/docs/latest/rdd-programming-guide.html#resilient-distributed-datasets-rdds) and the [`DataFrame API`](https://spark.apache.org/docs/latest/sql-programming-guide.html).
+
+By the end of this lab, you will have a solid understanding of how to use Spark to implement the `PageRank` algorithm and how to use the RDD and DataFrame APIs to perform data processing tasks. So, let's get started!
+
+Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-Lab/tree/main/src/lab5).
+
+#
+
 <a id="setup" />
 
 ### 4. Setup
