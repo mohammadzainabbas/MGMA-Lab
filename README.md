@@ -114,7 +114,7 @@ Please checkout lab's details [here](https://github.com/mohammadzainabbas/MGMA-L
 
 #### 3.5. Lab 05 - Graph Embeddings
 
-In this lab, we will be implementing the [`scikit-network`](https://scikit-network.readthedocs.io/en/latest/index.html) 
+In this lab, we will be implementing the [`scikit-network`](https://scikit-network.readthedocs.io/en/latest/index.html) library in Python to embed graphs. `Graph embeddings` are a way of representing a graph as a vector. They are used to represent the structure of a graph in a low-dimensional space, which can then be used for various tasks such as `visualization`, `classification`, and `clustering`.
 
 By the end of this lab, you will have a solid understanding of how to embed the graph by using different algorithms. So, let's get started!
 
